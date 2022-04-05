@@ -1,4 +1,4 @@
-ticket = int(input("Введите количество билетов, которое вы хотите приобрести: "))
+ticket = int(input("Введите колличество билетов, которое вы хотите приобрести: "))
 price = 0.0
 for i in range(ticket):
     age = int(input("Введите возраст посетителя: "))
@@ -8,6 +8,6 @@ for i in range(ticket):
         price = 990 + price
     else:
         price = 1390 + price
-    if 3 < ticket:
-        price = 0.9 * price
+if 3 < ticket:
+    price = 0.9 * price
 print("Сумма к оплате равна - " + str(round(price)) + " " "рублей")
